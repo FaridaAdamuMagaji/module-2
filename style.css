@@ -1,0 +1,33 @@
+.menu-button{
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+.menu-icon{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+}
+.menu-icon::before,
+.menu-icon::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+}
+.menu-icon::before{
+    top: -6px;
+}
+.menu-icon::after{
+    top: 6px;
+}
+.last{
+    color: #333;
+    text-decoration: none;
+}
