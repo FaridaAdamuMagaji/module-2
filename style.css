@@ -4,10 +4,11 @@
     border: none;
     padding: 10px;
     font-size: 16px;
+    margin-top: 20px;
 }
 .menu-icon{
     display: block;
-    width: 20px;
+    width: 32px;
     height: 2px;
     background-color: #333;
     position: relative;
@@ -16,74 +17,166 @@
 .menu-icon::after{
     content: "";
     display: block;
-    width: 20px;
+    width: 32px;
     height: 2px;
     background-color: #333;
     position: absolute;
 }
 .menu-icon::before{
-    top: -6px;
+    top: -10px;
 }
 .menu-icon::after{
-    top: 6px;
+    top: 10px;
+}
+.menu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 20px;
+}
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    margin-bottom: 20%;
+}
+.menu-button:focus + .menu{
+    display: block;
 }
 .last{
     color: #333;
     text-decoration: none;
+    font-size: 16px;
+    font-family: monsterrat, sans-serif;
+    font-weight: normal;
+}
+.foreign{
+    display: flex;
+    gap: 8%;
+    margin-left: 6%;
+    margin-top: 8%;
+    margin-bottom: 40%;
+}
+.dollar{
+    color: red;
+    font-size: 18px;
+    border-bottom: 2px dotted red;
+    width: 2%;    
+}
+.rupee{
+    color: red;
+    font-size: 18px;
+    border-bottom: 2px dotted red;
+    width: 4.8%;
+}
+.socials{
+    display: flex;
+    gap: 4%;
+    margin-left: 7%;
+}
+h1{
+    margin-left: 13%;
+    margin-top: -6%;
 }
 .your{
     color: blue;
-    font-size: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: monsterrat,sans-serif; /*here*/
 }
 .logo{
     color: red;
-    font-size: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: monsterrat,sans-serif;
 }
 .profile{
-    
+    justify-self: flex-end;
+    margin-right: 14%;
+    margin-top: -50px;
 }
 .contain{
     position: relative;
     width: 100%;
-    height: 100%;
-    align-self: center;
-    justify-self: center;
-
+    height: 100px;
+    display: flex;
+    margin-top: 5%;
 }
-.view{
+.views{
     position: absolute;
-    justify-self: center;
-
+    width: 100%;
+    text-align: center;
+    object-fit: contain;
 }
 h2{
-    position: relative;
+    position: absolute;
+    font-size: 28px;
+    font-family: sans-serif;
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 8%;
 }
 .we{
-    position: relative;
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 15%;
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: monsterrat, sans-serif;
+    
 }
 .white{
-    position: relative;
+    position: absolute;
     background-color: #fff;
-    width: 50%;
+    width: 328px;
     border-radius: 35px;
+    height: 70px;
+    margin-top: 49%;
+    margin-left: 15%;
+}
+.lock{
+    margin-left: 8%;
+    margin-top: 7%;
+}
+.where{
+    margin-left: 18%;
+    margin-top: -11%;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.destination{
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 18%;
+    margin-top: 2%;
+    color: #858585;
 }
 .sea{
+    /*width: 40px;
+    height: 40px;
+    padding: 6px;
+    justify-self: flex-end;
+    margin-right: 5%;*/
+    justify-self: flex-end;
     background-color: red;
-    width: 8%;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 17px;
+    margin-top: -14%;
+    margin-right: 5%;
 }
+
 h3{
     margin-top: 40%;
-}
-.ash{
-    background-color: #F7F7F7;
-    margin-top: -11%;
-}
-h3{
     font-size: 28px;
     text-align: center;
     margin-bottom: 1%;
+}
+.ash{
+    background-color: #F7F7F7;
+    margin-top: 72%;
 }
 .the{
     font-size: 22px;
@@ -134,12 +227,14 @@ h3{
 .border{
     border: 1px solid rgb(224, 221, 221);
     padding: 90px;
-    
     border-radius: 10px;
     width: 35%;
     height: 110%;
     align-self: center;
     justify-self: center;
+    margin-bottom: 4%;
+    padding-bottom: 2%;
+    
 }
 .container{
     position: relative;
@@ -147,7 +242,7 @@ h3{
 .bed{
     align-self: center;
     justify-self: center;
-    margin-top: -39%; 
+    margin-top: -47%; 
 }
 .point{
     position: absolute;
@@ -186,4 +281,108 @@ h3{
 .night{
     color: blue;
     font-size: 16px;
+}
+.review{
+    font-size: 28px;
+    text-align: center;
+}
+.reviewer{
+    align-self: center;
+    justify-self: center;
+}
+.box{
+    j
+}
+.quick{
+    font-size: 18px;
+    width: 62%;
+    margin: auto;
+}
+.name{
+    font-size: 17px;
+    margin-left: 19%;
+
+}
+.bold{
+    font-weight: bold;
+}
+.italics{
+    font-style: italic;
+}
+.cent{
+    width: 75%;
+    text-align: center;
+    justify-self: center;
+}
+.more{
+    width: 90%;
+    height: 38px;  
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+}
+.view{
+    font-size: 18px;
+    margin: auto;
+    color: white;
+}
+.recent{
+    font-size: 26px;
+    text-align: center;
+}
+.posts{
+    margin: ;
+
+}
+.athens{
+    justify-self: center;
+}
+.may{
+
+}
+.first{
+    display: flex;
+    justify-content: center;
+    gap: 29%;
+    margin-top: 6%;    
+}
+.time{
+    display: flex;
+    gap: 10px;
+}
+.trip{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 15%;
+}
+.it{
+    font-size: 18px;
+    width: 60%;
+    margin-left: 15%;
+}
+.footer{
+    margin-left: 15%;
+}
+.section{
+    font-weight: bold;
+    margin-bottom: 4%;
+    margin-top: 16%;
+}
+.page{
+    margin-bottom: 4%;
+}
+.pages{
+    margin-bottom: 8%;
+}
+.input{
+    display: flex;
+    
+}
+.email{
+    width: 140%;
+    margin-left: 15%;
+}
+.red{
+    background-color: red;
+    color: black;
 }
