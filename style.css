@@ -398,6 +398,7 @@ h3{
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 5%;
+    font-family: sans-serif;
 }
 .input{
     display: flex;
@@ -406,13 +407,21 @@ h3{
     height: 40px;
 }
 .email{
-    width: 140%;
+    width: 100%;
     margin-left: 40%;
 }
 .red{
+    width: 8%;
+    padding: -2%;
+    height: 56%;
+    margin-top: -0.5%;
+    border-radius: 6px;
     background-color: red;
-    width: 6%;
-    border-radius: 5px;
+    margin-right: 4%;
+}
+.touch{
+    margin-left: 12%;
+    margin-top: 12%;
 }
 .color{
     color: black;
