@@ -5,6 +5,7 @@
     padding: 10px;
     font-size: 16px;
     margin-top: 20px;
+    margin-left: 12%;
 }
 .menu-icon{
     display: block;
@@ -76,7 +77,7 @@
     margin-left: 7%;
 }
 h1{
-    margin-left: 13%;
+    margin-left: 23%;
     margin-top: -6%;
 }
 .your{
@@ -169,14 +170,15 @@ h2{
 }
 
 h3{
-    margin-top: 40%;
+    margin-top: 35%;
+    padding-top: 30px;
     font-size: 28px;
     text-align: center;
     margin-bottom: 1%;
 }
 .ash{
     background-color: #F7F7F7;
-    margin-top: 72%;
+    margin-top: 50%;
 }
 .the{
     font-size: 22px;
@@ -250,9 +252,18 @@ h3{
     margin-top: -110%;
     margin-left: -25%;
     background-color: #fff;
-    width: 67px;
+    width: 57px;
     height: 32px;
-    opacity: 100%;
+    opacity: 70%;
+    gap: 10%;
+}
+.star{
+    height: 20px;
+    align-self: center;
+}
+.number{
+    font-size: 16px;
+    align-self: center;
 }
 .heart{
     position: absolute;
@@ -372,17 +383,51 @@ h3{
     margin-bottom: 4%;
 }
 .pages{
-    margin-bottom: 8%;
+    margin-bottom: -6%;
+}
+.of{
+    margin-bottom: 7%;
+}
+.even{
+    margin-left: 15%;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.subscribe{
+    margin-left: 15%;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5%;
 }
 .input{
     display: flex;
-    
+    justify-content: space-around;
+    width: 328px;
+    height: 40px;
 }
 .email{
     width: 140%;
-    margin-left: 15%;
+    margin-left: 40%;
 }
 .red{
     background-color: red;
+    width: 6%;
+    border-radius: 5px;
+}
+.color{
     color: black;
+    width: 328px;
+}
+.foot{
+    margin-left: 15%;
+}
+.my{
+    color: blue;
+}
+.log{
+    color: red;
+}
+
+.delvig{
+    color: blue;
 }
