@@ -80,7 +80,7 @@ Open `index.html` in a web browser to view the project.
   <!--Destination images and locations -->
  </section>
  <section>
-  <!--About us-->
+  <!--About us--> 
  </section>
  <section>
   <!--make the trip memorable-->
