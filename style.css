@@ -61,13 +61,13 @@
 }
 .dollar{
     color: red;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 2px dotted red;
     width: 2%;    
 }
 .rupee{
     color: red;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 2px dotted red;
     width: 4.8%;
 }
@@ -349,7 +349,7 @@ h3{
     justify-self: center;
 }
 .may{
-
+    /*check*/
 }
 .first{
     display: flex;
