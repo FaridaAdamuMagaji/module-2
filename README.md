@@ -22,9 +22,10 @@
 This project was designed using HTML, CSS and javaScript and it enhances overall user experience and visual appeal. It has the following sections:
 -A section consisting of navigation links, profile icon and an image.
 -A chose-us section containing search, payment and support methods.
--A section showing the advantages of contacting the owners of this website.
--A section highlighting the positive features of this website.
--A section containing contact information and additional texts.
+-A section showing special offers.
+-A section showing the positive reviews given by users. 
+-A section containing recent posts by users.
+-A footer section containing social media handles and links for prospective users.
 
 ## Presentation <a name="Presentation"></a>
 - [Presentation Link]()
@@ -39,10 +40,12 @@ Checkout the Live Demo of this project: [Live Demo](https://www.loom.com/share/e
 -javaScript
 
 ## Features
--**Responsive Design**: The layout adjusts to various screen sizes using media queries.
+-**Mobile-first Design**: The layout is used only on mobile phones.
 -**Custom properties**: Used CSS variables to apply the correct color theme.
 -**Flexbox layout**: Refined styling to ensure better spacing and alignment.
+-**javaScript**: Dynamic rendering for enhanced user experience.
 -**Modern typography**: used "Urbanist" and "Gilda display" to enhance visual appeal.
+
 
 ## Setup iNSTRUCTIONS 
 
