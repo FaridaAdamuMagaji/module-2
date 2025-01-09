@@ -20,9 +20,8 @@
 ## Overview
 
 This project was designed using HTML, CSS and javaScript and it enhances overall user experience and visual appeal. It has the following sections:
--A header 
--A section consisting of texts, menu bar and images.
--A section consisting of destination images and locations.
+-A section consisting of navigation links, profile icon and an image.
+-A chose-us section containing search, payment and support methods.
 -A section showing the advantages of contacting the owners of this website.
 -A section highlighting the positive features of this website.
 -A section containing contact information and additional texts.
