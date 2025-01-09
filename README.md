@@ -69,26 +69,22 @@ Open `index.html` in a web browser to view the project.
 ```html
 <header>
  <section>
-  <div class="container">
-   <h1>
-   travel around the world
-   </h1>
-   menu
-  </div>
-  <div class="image-container">
-  </div>
+  <!--navigation links and texts -->
  </section>
  <section>
-  <!--Destination images and locations -->
+  <!--why chhose us section -->
  </section>
  <section>
-  <!--About us--> 
+  <!--special offers--> 
  </section>
  <section>
-  <!--make the trip memorable-->
+  <!--Reviews-->
  </section>
  <section>
-  <!--social icons and footer texts-->
+  <!--Recent posts-->
+ </section>
+ <section>
+  <!--social media links and footer texts-->
  </section>
  ```
 
