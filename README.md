@@ -96,4 +96,4 @@ This project is licensed under the MIT License.
 ## Authors 
 - **Name:**Farida Adamu Magaji
 -**Email:**faridaadamumagaji@gmail.com
--**GitHub:**[  ](  )
+-**GitHub:**[FaridaAdamuMagaji]( https://github.com/FaridaAdamuMagaji)
