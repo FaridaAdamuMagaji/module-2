@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <button class="menu-button">
+    <header>
+        <button class="menu-button" id="menu-button">
             <span class="menu-icon"></span>
-        </button>
-        <nav class="menu">
-            <ul>
+        </button>          
+        <nav class="menu" id="menu">
+            <div class="cancel"></div>
+            <div class="men">
+                <img src="./assets/menu.svg" alt="menu" class="extra">
+                <div class="up"><span class="you">Your</span><span class="logs">.logo</span></div>
+                <div class="proof"><img src="./assets/profile.svg" alt="profile" class="proof"></div>
+            </div>
+            <ul class="list">
                 <li><a class="last" href="#">Last Minute Deals</a>
                 </li>
                 <li>
@@ -83,348 +92,336 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="ash">
-        <div>
+    </header>
+    <section class="ChooseUsContainer">
+        <div class="ChooseUs-section">
             <h3>
                 Why Choose Us
             </h3>
             <p class="the">
                 The main reason is because our competitors have disgusting sites, but we can' t write that here, so the text here will be different
             </p>
+            <div class="advantages">
+
+            </div>
         </div>
-        <div class="pay">
-            <img src="./assets/payment.png" alt="payment">
-        </div>
-        <h4 class="title">
-            Payment methods
-        </h4>
-        <p class="text">
-            We have a lot of them, from cryptocurrencies to barter for potatoes
-        </p>
-        <div class="pay">
-            <img src="./assets/search.png" alt="search-bar">
-        </div>
-        <h5 class="title">
-            Simple search process
-        </h5>
-        <p class="text">
-            We checked it out, even the kid did it, but it was my mom's friend's son
-        </p>
-        <div class="pay">
-            <img src="./assets/headphone.png" alt="headphone">
-        </div>
-        <h6 class="title">
-            24/7 Support
-        </h6>
-        <p class="support">
-            Is there something you don't understand? Feel free to call us. Phone number in the footer
-        </p>
-        <div class="pay">
-            <img src="./assets/nice-cat.png" alt="cat">
-        </div>
-        <h6 class="title">
-            We are nice
-        </h6>
-        <p class="fantasy">
-            Fantasy is over, there will be something really convincing here
-        </p>
     </section>
-    <section>
-        <body>
-            <div class="container">
-                <button id="renderButton">Render Content</button>
-                <div id="dynamicContent"></div>
-            </div>
-            <!-- Link to your JavaScript file -->
-            <script src="script.js"></script>
-        </body>
-        <h6 class="special">
-            Special offers
-        </h6>
-        <div class="border">
-            <div class="container">
-                <div class="bed">
-                    <img src="./assets/bedroom.png" alt="bedroom">
-                </div>
-                <div class="point">
-                    <div class="star">
-                        <img src="./assets/Star.svg" alt="star">
+    <script>
+        const ChooseUsContainerData = [
+    {
+        image: 'assets/payment.png',
+        title: 'Payment methods',
+        description: 'We have a lot of them, from cryptocurrencies to barter for potatoes'
+    }, 
+    {
+        image: 'assets/search.png',
+        title: 'Simple search process',
+        description: 'We checked it out, even the kid did it, but it was my mom\'s friend\'s son'
+    },
+    {
+        image: 'assets/headphone.png',
+        title: '24/7 Support',
+        description: 'Is there something you don\'t understand? Feel free to call us. Phone number in the footer'
+    },
+    {
+        image: 'assets/nice-cat.png',
+        title: 'We are nice',
+        description: 'Fantasy is over, there will be something really convincing here'
+    },
+]
+
+
+const ChooseUsContainer = document.querySelector('.ChooseUsContainer');
+
+const renderchooseus = ()=>{
+    ChooseUsContainerData.map((chooseusData)=>{
+        const ChooseUsElement = document.createElement('div');
+        ChooseUsElement.classList.add('advantages');
+        ChooseUsElement.innerHTML= `
+            <img class="pay" src=" ${chooseusData.image}" alt=" ">
+            <h3 class="title">${chooseusData.title}</h3>
+            <p class="text">${chooseusData.description}</p>
+        `
+
+        ChooseUsContainer.appendChild(ChooseUsElement)
+    })
+}
+renderchooseus();
+    </script>
+    <section class="specialContainer">
+        <h6 class="special">Special offers</h6>
+        <div id="borderContainer">
+
+        </div>
+    </section>
+    <script>
+        const offers = [
+            {
+                specialImages: './assets/bedroom.png',
+                specialImages2: './assets/star.svg',
+                number: '4.8',
+                specialImages3: './assets/favorite.svg',
+                address: 'Wilderness Club at Big Ceddar',
+                date: '28 October - 1 November',
+                cost: '$2016 /6 night',
+                
+            },
+            {
+                specialImages: './assets/bedroom-2.png',
+                specialImages2: './assets/star.svg',
+                number: '4.8',
+                specialImages3: './assets/favorite.svg',
+                address: 'Wilderness Club at Big Ceddar',
+                date: '28 October - 1 November',
+                cost: '$2016 /6 night',
+                
+            },
+            {
+                specialImages: './assets/bedroom-3.png',
+                specialImages2: './assets/star.svg',
+                number: '4.8',
+                specialImages3: './assets/favorite.svg',
+                address: 'Wilderness Club at Big Ceddar',
+                date: '28 October - 1 November',
+                cost: '$2016 /6 night',
+            }            
+        ];
+        const specialOffer = document.querySelector('.specialContainer');
+        
+        const renderspecial = ()=>{
+            offers.map((specialData)=>{
+                const specialContainerElement = document.createElement('div');
+                specialContainerElement.classList.add('borderContainer');
+                specialContainerElement.innerHTML= `
+                    <div class="border">
+                        <div class="container">
+                            <div class="bed">
+                                <img src="${specialData.specialImages}" alt="bedroom">
+                            </div>
+                            <div class="point">
+                                <div class="star">
+                                    <img src="${specialData.specialImages2}" alt="star">
+                                </div>
+                                <p class="number">
+                                    ${specialData.number}
+                                </p>
+                            </div>
+                            <div class="heart">
+                                <img src="${specialData.specialImages3}" alt="heart">
+                            </div>              
+                        </div>
+                        <p class="wild">
+                            ${specialData.address}
+                        </p>
+                        <p class="date">
+                            ${specialData.date}
+                        </p>
+                        <p class="money">
+                            ${specialData.cost}
+                        </p>
                     </div>
-                    <p class="number">
-                        4.8
-                    </p>
-                </div>
-                <div class="heart">
-                    <img src="./assets/favorite.svg" alt="heart">
-                </div>              
-            </div>
-            <p class="wild">
-                Wilderness Club at Big Ceddar
-            </p>
-            <p class="date">
-                28 October <span class="dash">-</span> 1 November
-            </p>
-            <p class="money">
-                <span class="cost">$2016</span>
-                <span class="night">/6 night</span>
-            </p>
+                `
+                specialOffer.appendChild(specialContainerElement)
+            });
+        }
+        renderspecial();
+    </script> 
+    <section class="reviews">
+        <div class="review">
+            <h6 class="review">Reviews</h6>
         </div>
-        <div class="border">
-            <div class="container">
-                <div class="bed">
-                    <img src="./assets/bedroom-2.png" alt="bedroom">
-                </div>
-                <div class="point">
-                    <img src="./assets/Star.svg" alt="star" class="star">
-                    <p class="number">
-                        4.8
-                    </p>
-                </div>
-                <div class="heart">
-                    <img src="./assets/favorite.svg" alt="heart">
-                </div>
-            </div>
-            <p class="wild">
-                Wilderness Club at Big Ceddar
-            </p>
-            <p class="date">
-                28 October <span class="dash">-</span> 1 November
-            </p>
-            <p class="money">
-                <span class="cost">$2016</span>
-                <span class="night">/6 night</span>
-            </p>
-        </div>
-        <div class="border">
-            <div class="container">
-                <div class="bed">
-                    <img src="./assets/bedroom-3.png" alt="bedroom">
-                </div>
-                <div class="point">
-                    <img src="./assets/Star.svg" alt="star" class="star">
-                    <p class="number">
-                        4.8
-                    </p>
-                </div>
-                <div class="heart">
-                    <img src="./assets/favorite.svg" alt="heart">
-                </div>              
-            </div>
-            <p class="wild">
-                Wilderness Club at Big Ceddar
-            </p>
-            <p class="date">
-                28 October <span class="dash">-</span> 1 November
-            </p>
-            <p class="money">
-                <span class="cost">$2016</span>
-                <span class="night">/6 night</span>
-            </p>
-        </div>
-        <h6 class="review">
-            Reviews
-        </h6>
-        <div class="reviewer">
-            <img src="./assets/reviewer.png" alt="reviewer">
-        </div>
-        <div class="box">
-            <p class="quick">
-                I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.
-            </p>
-            <p class="name">
-                <span class="bold">Jannike Borg,</span>
-                <span class="italics">Publisher</span>
-            </p>
-        </div>
-        <div class="reviewer">
-            <img src="./assets/reviewr-2.png" alt="reviewer">
-        </div>
-        <div class="box">
-            <p class="quick">
-                I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.
-            </p>
-            <p class="name">
-                <span class="bold">LeBron Durant,</span>
-                <span class="italics">Flight attendant</span>
-            </p>
-        </div>
-        <div class="reviewer">
-            <img src="./assets/reviewer-3.png" alt="reviewer">
-        </div>
-        <div class="box">
-            <p class="quick">
-                I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.
-            </p>
-            <p class="name">
-                <span class="bold">Kaarel piha,</span>
-                <span class="italics">Chiropodist</span>
-            </p>
-            <div class="cent">
+    </section>
+    <script>
+        const reviewContainer = [
+    {	
+        reviewimage: './assets/reviewer.png',
+        comment: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
+        reviewerName: '<p class="name><span class="bold">Jannike Borg</span>, <span class="italics">Publisher</span></p>'
+    },
+    {
+        reviewimage: './assets/reviewr-2.png',
+        comment: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
+        reviewerName: '<p class="name><span class="bold">Lebron Durant</span>, <span class="italics">Flight attendant</span></p>'
+    },
+    {
+        reviewimage: './assets/reviewer-3.png',
+        comment: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
+        reviewerName: '<p class="name><span class="bold">Kaarel Piho</span>, <span class="italics">Chiropodist</span></p>'
+    },
+]
+
+const renderreview = reviewContainer =>{
+    const Container = document.querySelector('.reviews');
+    reviewContainer.forEach(review => {
+        Container.innerHTML += `
+        <img src="${review.reviewimage}" alt="review-img" class="reviewer">
+        <p class="quick"> ${review.comment}</p>
+        <p class="review">${review.reviewerName}</p>
+        `;
+    }) ;
+    Container.innerHTML += `
+        <div class="cent">
                 <button class="more">
                     <span class="view">More reviews</span>
                 </button>
             </div>
-        </div>
-        <h6 class="recent">
-            Recent posts
-        </h6>
-        <div class="posts">
-            <div class="athens">
-                <img src="./assets/Athens.png" alt="Athens">
-            </div>
-            <div class="first">
-                <div class="may">
-                    May 23, 2022
-                </div>
-                <div class="time">
-                    <div>
-                        <img src="./assets/clock.svg" alt="clock">
-                    </div>
-                    <div>
-                        5 minutes
-                    </div>
-                </div>
-            </div>
-            <div class="trip">
-                My trip to Athens
-            </div>
-            <p class="it">
-                It would seem that in a city where Theseus, Plato and Epicurus once walked, the very idea of the subway is alien to the city, but already...
-            </p>
-        </div>
+        `;
+}
+renderreview(reviewContainer);
+
+    </script>
+
+    <section class="posts">
         <div>
-            <div class="athens">
-                <img src="./assets/vilnius.png" alt="vilnius resorts">
-            </div>
-            <div class="first">
-                <div class="may">
-                    May 22, 2022
+            <h6 class="recent">Recent posts</h6>
+        </div>
+        <div class="places">
+
+        </div>
+    </section>
+    <script>
+    const postsContainerData = [
+        {   postimage: 'assets/Athens.png', 
+            post: 'May 23, 2022',
+            clock:'./assets/clock.svg ',
+            minutes:'5 minutes',
+            post1: 'My trip to Athens',
+            post2: 'It would seem that in a city where Theseus, Plato and Epicurus once walked, the very idea of the subway is alien to the city, but already...'
+        },
+        {   postimage: 'assets/vilnius.png', 
+            post: 'May 22, 2022',
+            clock: './assets/clock.svg ',
+            minutes:'1 minutes',
+            post1: 'Vilnius resorts',
+            post2: 'I havent seen any resorts in Vilnius, but there are wonderful people and pubs'
+        },
+        {   postimage: 'assets/plane.png', 
+            post: 'May 20, 2022',
+            clock: './assets/clock.svg ',
+            minutes:'15 minutes',
+            post1: 'Tips for flying on a plane',
+            post2: 'If you have a fear of flying, here\'s a helpful tip: bring your co-pilot so you can take a nap while he steers the plane for you'
+},
+];
+
+const postsContainer = document.querySelector('.posts');
+
+const renderposts = ()=>{
+    postsContainerData.map((postData)=>{
+        const postsElement = document.createElement('div');
+        postsElement.classList.add('places');
+        postsElement.innerHTML= `
+            <div class="posts">
+                <div class="athens">
+                    <img src="${postData.postimage}" alt="Athens">
                 </div>
-                <div class="time">
-                    <div>
-                        <img src="./assets/clock.svg" alt="clock">
+                <div class="first">
+                    <div class="may">
+                        ${postData.post}
                     </div>
-                    <div>
-                        1 minute
+                    <div class="time">
+                        <div>
+                            <img src=".${postData.clock}" alt="clock">
+                        </div>
+                        <div class="five">
+                            ${postData.minutes}
                     </div>
                 </div>
             </div>
             <div class="trip">
-                Vilnius resorts
+                ${postData.post1}
             </div>
             <p class="it">
-                I haven't seen any resorts in Vilnius, but there are wonderful people and pubs
+                ${postData.post2}
             </p>
         </div>
-        <div>
-            <div class="athens">
-                <img src="./assets/plane.png" alt="plane">
+    `;
+    postsContainer.appendChild(postsElement)
+    });
+}
+renderposts();
+    </script>
+    <section class="end">
+        <div class="footer">
+            <div class="section">
+                Title of section
             </div>
-            <div class="first">
-                <div class="may">
-                    May 20, 2022
-                </div>
-                <div class="time">
-                    <div>
-                        <img src="./assets/clock.svg" alt="clock">
-                    </div>
-                    <div>
-                        15 minutes
-                    </div>
-                </div>
+            <div class="page">
+                Page title
             </div>
-            <div class="trip">
-                Tips for flying on a plane
+            <div class="page">
+                Page title
             </div>
-            <p class="it">
-                If you have a fear of flying, here's a helpful tip: bring your co-pilot so you can take a nap while he steers the plane for you
-            </p>
+            <div class="pages">
+                Page title
+            </div>
+            <div class="section">
+                Title of section
+            </div>
+            <div class="page">
+                Page title
+            </div>
+            <div class="page">
+                Page title
+            </div>
+            <div class="pages">
+                Page title
+            </div>
+            <div class="section">
+                Title of section
+            </div>
+            <div class="page">
+                Page title
+            </div>
+            <div class="page">
+                Page title
+            </div>
+            <div class="of">
+                Page title
+            </div>
         </div>
-        <section class="end">
-            <div class="footer">
-                <div class="section">
-                    Title of section
-                </div>
-                <div class="page">
-                    Page title
-                </div>
-                <div class="page">
-                    Page title
-                </div>
-                <div class="pages">
-                    Page title
-                </div>
-                <div class="section">
-                    Title of section
-                </div>
-                <div class="page">
-                    Page title
-                </div>
-                <div class="page">
-                    Page title
-                </div>
-                <div class="pages">
-                    Page title
-                </div>
-                <div class="section">
-                    Title of section
-                </div>
-                <div class="page">
-                    Page title
-                </div>
-                <div class="page">
-                    Page title
-                </div>
-                <div class="of">
-                    Page title
-                </div>
+        <div class="subscribe">
+            Subscribe to Newsletter
+        </div>
+        <div class="even">
+            Your email
+        </div>
+        <div class="input">
+            <div>
+                <input type="text" class="email">
             </div>
-            <div class="subscribe">
-                Subscribe to Newsletter
+            <div class="red">
+                <img class="inside" src="./assets/telegram-icon.svg" alt="telegram-icon">
             </div>
-            <div class="even">
-                Your email
+        </div>
+        <hr class="color">
+        <div class="foot">
+            <span class="my">Your</span>
+            <span class="log">.logo</span>
+        </div>
+        <div class="logos">
+            <div>
+                <img src="./assets/contact.svg" alt="phone logo">
             </div>
-            <div class="input">
-                <div>
-                    <input type="text" class="email">
-                </div>
-                <div class="red">
-                    <img class="inside" src="./assets/telegram-icon.svg" alt="telegram-icon">
-                </div>
+            <div>
+                <img src="./assets/facebook-logo.svg" alt="facebook logo">
             </div>
-            <hr class="color">
-            <div class="foot">
-                <span class="my">Your</span>
-                <span class="log">.logo</span>
+            <div>
+                <img src="./assets/Youtube-logo.svg" alt="youtube logo">
             </div>
-            <div class="logos">
-                <div>
-                    <img src="./assets/contact.svg" alt="phone logo">
-                </div>
-                <div>
-                    <img src="./assets/facebook-logo.svg" alt="facebook logo">
-                </div>
-                <div>
-                    <img src="./assets/Youtube-logo.svg" alt="youtube logo">
-                </div>
-                <div>
-                    <img src="./assets/Instagram-logo.svg" alt="instagram icon">
-                </div>
-                <div>
-                    <img src="./assets/telegram-logo.svg" alt="Telegram icon">
-                </div>
+            <div>
+                <img src="./assets/Instagram-logo.svg" alt="instagram icon">
             </div>
-            <div class="design">
-                Design by <span class="delvig">Delvig</span>
+            <div>
+                <img src="./assets/telegram-logo.svg" alt="Telegram icon">
             </div>
-            
+        </div>
+        <div class="design">
+            Design by <span class="delvig">Delvig</span>
+        </div>
         </section>
     </section>
-
-    <script src="script.js">
-
-    </scrip>
+    <script src="script.js"></script>
+    
 </body>
 </html>
