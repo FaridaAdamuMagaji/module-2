@@ -32,7 +32,7 @@ This project was designed using HTML, CSS and javaScript and it enhances overall
 
 Checkout the Live Demo of this project: [Live Demo](https://www.loom.com/share/8f6ebd99f2fa49d287c5d2316a1bbad9?sid=9deba470-6ec3-4a8b-9dad-7a22628ffb75)
 ## Live-demo 
--Checkout the live Demo of the project: [Live Demo]()
+-Checkout the live Demo of the project: [Live Demo](https://module-2-6953.onrender.com)
 
 ## Technologies Used 
 -HTML5
