@@ -236,17 +236,17 @@ renderchooseus();
     {	
         reviewimage: './assets/reviewer.png',
         comment: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
-        reviewerName: '<p class="name><span class="bold">Jannike Borg</span>, <span class="italics">Publisher</span></p>'
+        reviewerName: '<span class="bold">Jannike Borg</span>, <span class="italics">Publisher</span>'
     },
     {
         reviewimage: './assets/reviewr-2.png',
         comment: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
-        reviewerName: '<p class="name><span class="bold">Lebron Durant</span>, <span class="italics">Flight attendant</span></p>'
+        reviewerName: '<span class="bold">Lebron Durant</span>, <span class="italics">Flight attendant</span>'
     },
     {
         reviewimage: './assets/reviewer-3.png',
         comment: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
-        reviewerName: '<p class="name><span class="bold">Kaarel Piho</span>, <span class="italics">Chiropodist</span></p>'
+        reviewerName: '<span class="bold">Kaarel Piho</span>, <span class="italics">Chiropodist</span>'
     },
 ]
 
@@ -256,15 +256,15 @@ const renderreview = reviewContainer =>{
         Container.innerHTML += `
         <img src="${review.reviewimage}" alt="review-img" class="reviewer">
         <p class="quick"> ${review.comment}</p>
-        <p class="review">${review.reviewerName}</p>
+        <p class="name"><span class="bold></span><span class="italics"></span>${review.reviewerName}</p>
         `;
     }) ;
     Container.innerHTML += `
         <div class="cent">
-                <button class="more">
-                    <span class="view">More reviews</span>
-                </button>
-            </div>
+            <button class="more">
+                <span class="view">More reviews</span>
+            </button>
+        </div>
         `;
 }
 renderreview(reviewContainer);

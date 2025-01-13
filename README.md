@@ -30,9 +30,9 @@ This project was designed using HTML, CSS and javaScript and it enhances overall
 ## Presentation <a name="Presentation"></a>
 - [Presentation Link]()
 
-Checkout the Live Demo of this project: [Live Demo](https://www.loom.com/share/e1db6077c9fd4777a529cfd43b44e671?sid=47027ef1-e687-40e4-b15e-055b2ff25916) 
+Checkout the Live Demo of this project: [Live Demo](https://www.loom.com/share/8f6ebd99f2fa49d287c5d2316a1bbad9?sid=9deba470-6ec3-4a8b-9dad-7a22628ffb75)
 ## Live-demo 
--Checkout the live Demo of the project: [Live Demo](https://my-travel-website-ud2q.onrender.com)
+-Checkout the live Demo of the project: [Live Demo]()
 
 ## Technologies Used 
 -HTML5
