@@ -20,7 +20,7 @@
 ## Overview
 
 This project was designed using HTML, CSS and javaScript and it enhances overall user experience and visual appeal. It has the following sections:
--A section consisting of navigation links, profile icon and an image.
+-A header consisting of navigation links, profile icon and an image.
 -A chose-us section containing search, payment and support methods.
 -A section showing special offers.
 -A section showing the positive reviews given by users. 
@@ -30,9 +30,9 @@ This project was designed using HTML, CSS and javaScript and it enhances overall
 ## Presentation <a name="Presentation"></a>
 - [Presentation Link]()
 
-Checkout the Live Demo of this project: [Live Demo](https://www.loom.com/share/8f6ebd99f2fa49d287c5d2316a1bbad9?sid=9deba470-6ec3-4a8b-9dad-7a22628ffb75)
+Checkout the Live Demo of this project: [Live Demo](https://www.loom.com/share/d81a477dcba64ec6a55c52ad6aee4c61?sid=7236bab6-39b2-4dbb-985d-570920392f90)
 ## Live-demo 
--Checkout the live Demo of the project: [Live Demo](https://module-2-6953.onrender.com)
+-Checkout the live Demo of the project: [Live Demo](https://module-2-e34z.onrender.com)
 
 ## Technologies Used 
 -HTML5
